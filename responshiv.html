@@ -1,0 +1,78 @@
+<!-- https://vgboxart.com/resources/render/14198_kung-fu-panda-2-prev.png  -->
+<!-- https://www.pngkit.com/png/full/376-3761605_9439-render-po2-kung-fu-panda-characters-po.png -->
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .container{
+        margin-left: -8px;
+        
+        margin-right: -8px;
+    }
+    .row {
+        background-color: aquamarine;
+        display: flex;
+        width: 500px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .box {
+        display: inline-block;
+        background-color: lightcoral;
+        margin-left: 10px;
+        width: 47%;
+    }
+
+    .img1 {
+        height: 200px;
+    }
+
+    @media (max-width: 600px) {
+        .row {
+            background-color: rgb(150, 127, 255);
+            flex-direction: column-reverse;
+        }
+        .box{
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="container">
+            <div class="box">
+                <img class="img1" src="https://vgboxart.com/resources/render/14198_kung-fu-panda-2-prev.png" alt="">
+                <h1>Pandas Image 1</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis, excepturi adipisci
+                    commodi quia itaque non delectus laudantium, provident recusandae animi ea, maxime temporibus
+                    veritatis iure quasi. Neque, doloremque in.
+                </p>
+
+                <button>click </button>
+            </div>
+            <div class="box">
+                <img class="img1"
+                    src="https://www.pngkit.com/png/full/376-3761605_9439-render-po2-kung-fu-panda-characters-po.png"
+                    alt="">
+                <h1>Pandas Image 2</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis, excepturi adipisci
+                    commodi quia itaque non delectus laudantium, provident recusandae animi ea, maxime temporibus
+                    veritatis iure quasi. Neque, doloremque in.
+                </p>
+                <button>click </button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

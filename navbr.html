@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .nav-bar {
+        background-color: cornflowerblue;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        justify-content: space-between;
+        height: 100px;
+
+    }
+
+    .nav-bar-ul {
+        padding: 0%;
+        margin: 0;
+        list-style-type: none;
+
+    }
+
+    .nav-img {
+        position: absolute;
+        height: 58px;
+        width: 58px;
+        /* display: block; */
+        /* left: calc(50%-58px); why this is not working */
+        left: 48%;
+
+        border-radius: 100%;
+    }
+    .nav-img-footer
+    {
+        height: 58px;
+        width: 58px;
+
+
+        border-radius: 100%;
+    }
+
+    .nav-bar-ul>li:hover {
+        background-color: rgb(128, 187, 128);
+    }
+
+    /* it affect all link in nav-bar */
+    .nav-bar a,
+    .footer-class a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+
+    .baner-class {
+        background-image: url("https://www.capturelandscapes.com/wp-content/uploads/2019/04/Desert-Nights.jpg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(158, 158, 158);
+        height: 750px;
+        margin: 0px;
+        padding: 200px 0;
+        text-align: center;
+    }
+
+    .footer-class {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 10%;
+    }
+
+    /* use of  > is select all `li` element that paranet is .nav-bar-ul */
+    .nav-bar-ul>li {
+        border-radius: 10px;
+        display: inline-block;
+        padding: 14px 16px;
+        margin: 0px;
+
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 100px;
+    }
+
+    .description {
+        font-size: 20px;
+
+        width: 700px;
+        margin: auto
+    }
+    /* resposnsive web site */
+    @media screen and (max-width: 991px)
+    {
+        .nav-bar{
+            flex-direction: column-reverse;
+            height: 100%;
+            
+        }
+        .nav-bar-ul{
+            margin: 10px;
+        }
+        .nav-img
+        {
+            border-radius: 0;
+            top: 4%;
+            left: 4%;
+            height: 100px;
+            width:  100px;
+        }
+    }
+    @media screen and (max-width: 767px)
+    {
+        .nav-bar a,
+        .footer-class a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 15px;
+        }
+        .nav-bar{
+            flex-direction: column-reverse;
+            height: 100%;
+            background-color: red;
+            
+        }
+        .nav-bar-ul{
+            margin: 10px;
+        }
+        .nav-img
+        {
+            position: relative;
+            border-radius: 0;
+            order: 1;
+            height: 50px;
+            width:  50px;
+        }
+    }
+</style>
+
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul class="nav-bar-ul">
+                <li>
+                    <a href=""> Home</a>
+                </li>
+                <li>
+                    <a href=""> Home</a>
+                </li>
+
+                <li>
+                    <a href=""> Home</a>
+                </li>
+
+            </ul>
+
+
+            <img src="https://media.istockphoto.com/vectors/overlapping-gradient-letter-y-logotype-vector-id1188555556?k=20&m=1188555556&s=612x612&w=0&h=zt6Tb91R6LqKicx57KkdPmRSPd-OBXRrs8cP_qv_i3c="
+                class="nav-img" alt="">
+
+
+            <ul class="nav-bar-ul">
+                <li>
+                    <a href=""> Home</a>
+                </li>
+                <li style="background-color: green;">
+                    <a href=""> Home</a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </header>
+    <section class="baner-class">
+        <h1>Yash Garala</h1>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus obcaecati
+            praesentium beatae, saepe similique. Debitis dignissimos corporis quidem aut, in nisi ipsam quos ratione ut,
+            mollitia explicabo odit exercitationem.</p>
+    </section>
+
+    <footer class="footer-class">
+        <img src="https://media.istockphoto.com/vectors/overlapping-gradient-letter-y-logotype-vector-id1188555556?k=20&m=1188555556&s=612x612&w=0&h=zt6Tb91R6LqKicx57KkdPmRSPd-OBXRrs8cP_qv_i3c="
+            class="nav-img-footer" alt="">
+        <div class="footer-link">
+            <ul class="nav-bar-ul">
+                <li>
+                    <a href=""> Home</a>
+                </li>
+
+                <li>
+                    <a href=""> Home</a>
+                </li>
+
+                <li>
+                    <a href=""> Home</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
