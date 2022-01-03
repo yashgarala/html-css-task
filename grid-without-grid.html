@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+        }
+        .container{
+            max-width: 1000px;
+            margin:auto;
+        }
+        .column-50 {
+            width: 50%;
+            padding-left: 15px;
+            float: left;
+            padding-right: 15px;
+        }
+        .product-img{
+            width: 100%;
+        }
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .row:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+        .box{
+            background-color: #ddd;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column-50">
+                <div class="box">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, odio.</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="column-50">
+                <div class="box">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, odio.</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
